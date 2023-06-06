@@ -1,0 +1,256 @@
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.carousel .title, .carousel .subtitle {
+  color: white;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
+  margin: 0;
+  padding: 0;
+  font-size: 4rem;
+}
+.carousel .subtitle {
+  font-size: 2rem;
+}
+.carousel .text-wrapper {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.carousel-picture {
+  width: 100vw;
+  height: 100vh;
+  float: left;
+  position: relative;
+}
+.carousel-picture picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-holder {
+  position: relative;
+  left: 0;
+  will-change: transform;
+  width: 400%;
+}
+.carousel-holder[data-count="1"] {
+  width: 100vw;
+  animation: scroller-1c 20s infinite;
+}
+.carousel-holder[data-count="2"] {
+  width: 200vw;
+  animation: scroller-2c 20s infinite;
+}
+.carousel-holder[data-count="3"] {
+  width: 300vw;
+  animation: scroller-3c 20s infinite;
+}
+.carousel-holder[data-count="4"] {
+  width: 400vw;
+  animation: scroller-4c 20s infinite;
+}
+.carousel-holder[data-count="5"] {
+  width: 500vw;
+  animation: scroller-5c 20s infinite;
+}
+.carousel-holder[data-count="6"] {
+  width: 600vw;
+  animation: scroller-6c 20s infinite;
+}
+.carousel-holder[data-count="7"] {
+  width: 700vw;
+  animation: scroller-7c 20s infinite;
+}
+.carousel-holder[data-count="8"] {
+  width: 800vw;
+  animation: scroller-8c 20s infinite;
+}
+
+@keyframes scroller-1c {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    filter: opacity(1);
+    transform: translateX(0);
+  }
+}
+@keyframes scroller-2c {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(-200vw);
+  }
+  100% {
+    filter: opacity(1);
+    transform: translateX(0);
+  }
+}
+@keyframes scroller-3c {
+  0% {
+    transform: translateX(0);
+  }
+  33.3333333333% {
+    transform: translateX(-100vw);
+  }
+  66.6666666667% {
+    transform: translateX(-200vw);
+  }
+  100% {
+    transform: translateX(-300vw);
+  }
+  100% {
+    filter: opacity(1);
+    transform: translateX(0);
+  }
+}
+@keyframes scroller-4c {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100vw);
+  }
+  50% {
+    transform: translateX(-200vw);
+  }
+  75% {
+    transform: translateX(-300vw);
+  }
+  100% {
+    transform: translateX(-400vw);
+  }
+  100% {
+    filter: opacity(1);
+    transform: translateX(0);
+  }
+}
+@keyframes scroller-5c {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-100vw);
+  }
+  40% {
+    transform: translateX(-200vw);
+  }
+  60% {
+    transform: translateX(-300vw);
+  }
+  80% {
+    transform: translateX(-400vw);
+  }
+  100% {
+    transform: translateX(-500vw);
+  }
+  100% {
+    filter: opacity(1);
+    transform: translateX(0);
+  }
+}
+@keyframes scroller-6c {
+  0% {
+    transform: translateX(0);
+  }
+  16.6666666667% {
+    transform: translateX(-100vw);
+  }
+  33.3333333333% {
+    transform: translateX(-200vw);
+  }
+  50% {
+    transform: translateX(-300vw);
+  }
+  66.6666666667% {
+    transform: translateX(-400vw);
+  }
+  83.3333333333% {
+    transform: translateX(-500vw);
+  }
+  100% {
+    transform: translateX(-600vw);
+  }
+  100% {
+    filter: opacity(1);
+    transform: translateX(0);
+  }
+}
+@keyframes scroller-7c {
+  0% {
+    transform: translateX(0);
+  }
+  14.2857142857% {
+    transform: translateX(-100vw);
+  }
+  28.5714285714% {
+    transform: translateX(-200vw);
+  }
+  42.8571428571% {
+    transform: translateX(-300vw);
+  }
+  57.1428571429% {
+    transform: translateX(-400vw);
+  }
+  71.4285714286% {
+    transform: translateX(-500vw);
+  }
+  85.7142857143% {
+    transform: translateX(-600vw);
+  }
+  100% {
+    transform: translateX(-700vw);
+  }
+  100% {
+    filter: opacity(1);
+    transform: translateX(0);
+  }
+}
+@keyframes scroller-8c {
+  0% {
+    transform: translateX(0);
+  }
+  12.5% {
+    transform: translateX(-100vw);
+  }
+  25% {
+    transform: translateX(-200vw);
+  }
+  37.5% {
+    transform: translateX(-300vw);
+  }
+  50% {
+    transform: translateX(-400vw);
+  }
+  62.5% {
+    transform: translateX(-500vw);
+  }
+  75% {
+    transform: translateX(-600vw);
+  }
+  87.5% {
+    transform: translateX(-700vw);
+  }
+  100% {
+    transform: translateX(-800vw);
+  }
+  100% {
+    filter: opacity(1);
+    transform: translateX(0);
+  }
+}/*# sourceMappingURL=carousel.css.map */
