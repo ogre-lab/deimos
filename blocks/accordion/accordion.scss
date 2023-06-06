@@ -1,0 +1,44 @@
+.accordion {
+  & .title {
+    padding: 1rem;
+
+    &-wrapper {
+      background-color: #d38989;
+      border: 1px solid #551111;
+      cursor: pointer;
+
+      &.first {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+
+      &.last {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
+
+  & .body {
+    padding: 0.5rem;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: all 0.2s ease;
+    height: 0;
+
+    &-wrapper {
+      overflow-y: hidden;
+      background-color: #fafafa;
+      height: 0;
+
+      &.expanded {
+        height: auto;
+
+        .body {
+          transform: none;
+          height: auto;
+        }
+      }
+    }
+  }
+}

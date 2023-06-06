@@ -3,6 +3,7 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
+  margin: 0 -1rem;
 }
 .carousel .title, .carousel .subtitle {
   color: white;
@@ -12,7 +13,7 @@
   font-size: 4rem;
 }
 .carousel .subtitle {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .carousel .text-wrapper {
   text-align: center;
@@ -21,7 +22,6 @@
   left: 50%;
   transform: translate(-50%, -60%);
 }
-
 .carousel-picture {
   width: 100vw;
   height: 100vh;
@@ -34,12 +34,11 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .carousel-holder {
   position: relative;
   left: 0;
   will-change: transform;
-  width: 400%;
+  height: 100vh;
 }
 .carousel-holder[data-count="1"] {
   width: 100vw;

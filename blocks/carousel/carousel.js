@@ -1,4 +1,3 @@
-
 /**
  * Create a carousel
  * @param {HTMLDivElement} block carousel container
