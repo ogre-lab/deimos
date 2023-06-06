@@ -20,6 +20,7 @@
   transform-origin: top;
   transition: all 0.2s ease;
   height: 0;
+  color: #551111;
 }
 .accordion .body-wrapper {
   overflow-y: hidden;
